@@ -1,7 +1,7 @@
 body {
 	font-family: Arial, sans-serif;
 	line-height: 1.6;
-	margin: 20px;
+	margin: 30px;
 	background-color: #f4f4f4;
 }
 .code-container {
@@ -10,8 +10,8 @@ body {
 	padding: 0;
 	border-radius: 5px;
 	overflow: hidden;
-	max-width: 600px;
-	margin: 20px 0;
+	max-width: 800px;
+	margin: 20px 50px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .code-header {
@@ -43,6 +43,9 @@ body {
 }
 h2 {
 	color: #f09000;
+}
+h1 {
+	background: linear-gradient(to right, #f09000, #ffcc00);
 }
 code {
 	background-color: #3c3c3a;
