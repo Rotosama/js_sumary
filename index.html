@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Resumen de JavaScript</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<h1>Resumen de JavaScript</h1>
+
+		<h2>Variables</h2>
+		<p>
+			En JavaScript, puedes declarar variables usando <code>var</code>,
+			<code>let</code>, o <code>const</code>.
+		</p>
+		<div class="code-container">
+			<pre id="codigo-variables"></pre>
+		</div>
+
+		<h2>Tipos de Datos</h2>
+		<p>
+			JavaScript tiene varios tipos de datos primitivos y objetos. Aquí
+			hay ejemplos de los tipos de datos más comunes:
+		</p>
+		<div class="code-container">
+			<pre id="codigo-tipos-datos"></pre>
+		</div>
+
+		<h2>Declaración e Inicialización de Variables</h2>
+		<p>
+			Las variables se pueden declarar y opcionalmente inicializar en el
+			mismo momento.
+		</p>
+		<div class="code-container">
+			<pre id="codigo-declaracion-inicializacion"></pre>
+		</div>
+
+		<h2>Scope de Variables</h2>
+		<p>
+			El scope de una variable determina dónde se puede acceder a ella. En
+			JavaScript, hay scope global y scope local.
+		</p>
+		<div class="code-container">
+			<pre id="codigo-scope"></pre>
+		</div>
+
+		<h2>Bucles</h2>
+		<p>
+			Los bucles se utilizan para repetir una acción varias veces. Aquí
+			hay ejemplos de bucles <code>for</code>, <code>while</code> y
+			<code>do...while</code>:
+		</p>
+		<div class="code-container">
+			<pre id="codigo-bucles"></pre>
+		</div>
+
+		<h2>Condicionales</h2>
+		<p>
+			Las estructuras condicionales <code>if</code>,
+			<code>if...else</code> y <code>else</code> se utilizan para tomar
+			decisiones o alternativas en el código.
+		</p>
+		<div class="code-container">
+			<pre id="codigo-condicionales"></pre>
+		</div>
+
+		<h2>Arrays</h2>
+		<p>
+			Los arrays se utilizan para almacenar múltiples valores en una sola
+			variable. Aquí hay un ejemplo de cómo acceder a la posición y al
+			número que ocupa esa posición:
+		</p>
+		<div class="code-container">
+			<pre id="codigo-arrays"></pre>
+		</div>
+
+		<h2>Funciones</h2>
+		<p>
+			Las funciones en JavaScript se pueden declarar de varias maneras.
+			Aquí hay un ejemplo de una función simple:
+		</p>
+		<div class="code-container">
+			<pre id="codigo-funciones"></pre>
+		</div>
+
+		<h2>Ventajas de las Funciones</h2>
+		<p>Las funciones en JavaScript ofrecen varias ventajas:</p>
+		<ul>
+			<li>
+				<strong>Reutilización de Código:</strong> Permiten reutilizar
+				bloques de código en diferentes partes del programa.
+			</li>
+			<li>
+				<strong>Modularidad:</strong> Ayudan a dividir un programa
+				grande en módulos más pequeños y manejables.
+			</li>
+			<li>
+				<strong>Abstracción:</strong> Permiten usar una función sin
+				conocer los detalles internos de su implementación.
+			</li>
+			<li>
+				<strong>Mantenibilidad:</strong> Facilitan la actualización y
+				modificación del código.
+			</li>
+			<li>
+				<strong>Depuración:</strong> Hacen más fácil la identificación y
+				corrección de errores.
+			</li>
+			<li>
+				<strong>Parámetros y Argumentos:</strong> Permiten personalizar
+				el comportamiento de las funciones.
+			</li>
+			<li>
+				<strong>Closures:</strong> Permiten que una función interna
+				acceda a las variables de una función externa.
+			</li>
+		</ul>
+
+		<h2>Métodos Más Usados</h2>
+		<p>
+			JavaScript proporciona muchos métodos útiles para trabajar con
+			cadenas, arrays y otros tipos de datos. Aquí hay algunos de los
+			métodos más usados:
+		</p>
+		<div class="code-container">
+			<pre id="codigo-metodos"></pre>
+		</div>
+
+		<script>
+			const codigoVariables = `
+var nombre = "Heimerdinger";
+let edad = 317;
+const ciudad = "Valencia";
+`;
+
+			const codigoDeclaracionInicializacion = `
+var nombre = "Pepito"; // Declaración e inicialización
+let edad; // Solo declaración
+edad = 30; // Inicialización posterior
+const ciudad = "Madrid"; // Declaración e inicialización
+`;
+
+			const codigoScope = `
+var globalVar = "Soy global";
+
+function miFuncion() {
+    let localVar = "Soy local";
+    console.log(globalVar); // Accede a la variable global
+    console.log(localVar); // Accede a la variable local
+}
+
+miFuncion();
+console.log(globalVar); // Accede a la variable global
+// console.log(localVar); // Error: localVar no está definida en el scope global
+`;
+
+			const codigoBucles = `
+for (let i = 0; i < 5; i++) {
+    console.log("Bucle for, iteración número " + i);
+}
+
+let j = 0;
+while (j < 5) {
+    console.log("Bucle while, iteración número " + j);
+    j++;
+}
+
+let k = 0;
+do {
+    console.log("Bucle do...while, iteración número " + k);
+    k++;
+} while (k < 5);
+`;
+
+			const codigoCondicionales = `
+let numero = 10;
+
+if (numero > 0) {
+    console.log("El número es positivo");
+} else if (numero < 0) {
+    console.log("El número es negativo");
+} else {
+    console.log("El número es cero");
+}
+`;
+
+			const codigoFunciones = `
+function saludar(nombre) {
+    return "Hola, " + nombre + "!";
+}
+console.log(saludar("Juan"));
+`;
+
+			const codigoArrays = `
+const numeros = [10, 20, 30, 40, 50];
+
+for (let i = 0; i < numeros.length; i++) {
+    console.log("Posición " + i + ": " + numeros[i]);
+}
+`;
+
+			const codigoTiposDatos = `
+let cadena = "Hola, mundo"; // String
+let numero = 42; // Number
+let booleano = true; // Boolean
+let indefinido; // Undefined
+let nulo = null; // Null
+let objeto = { nombre: "Juan", edad: 30 }; // Object
+let simbolo = Symbol("simbolo"); // Symbol
+`;
+
+			const codigoMetodos = `
+// Métodos de cadenas
+let texto = "Hola, mundo";
+console.log(texto.length); // Longitud de la cadena
+console.log(texto.toUpperCase()); // Convertir a mayúsculas
+console.log(texto.toLowerCase()); // Convertir a minúsculas
+console.log(texto.includes("mundo")); // Verificar si incluye una subcadena
+
+// Métodos de arrays
+let numeros = [1, 2, 3, 4, 5];
+console.log(numeros.push(6)); // Añadir un elemento al final
+console.log(numeros.pop()); // Eliminar el último elemento
+console.log(numeros.shift()); // Eliminar el primer elemento
+console.log(numeros.unshift(0)); // Añadir un elemento al principio
+console.log(numeros.slice(1, 3)); // Obtener una porción del array
+console.log(numeros.indexOf(3)); // Obtener el índice de un elemento
+`;
+
+			document.getElementById("codigo-variables").textContent =
+				codigoVariables;
+			document.getElementById(
+				"codigo-declaracion-inicializacion"
+			).textContent = codigoDeclaracionInicializacion;
+			document.getElementById("codigo-scope").textContent = codigoScope;
+			document.getElementById("codigo-bucles").textContent = codigoBucles;
+			document.getElementById("codigo-condicionales").textContent =
+				codigoCondicionales;
+			document.getElementById("codigo-funciones").textContent =
+				codigoFunciones;
+			document.getElementById("codigo-arrays").textContent = codigoArrays;
+			document.getElementById("codigo-tipos-datos").textContent =
+				codigoTiposDatos;
+			document.getElementById("codigo-metodos").textContent =
+				codigoMetodos;
+		</script>
+	</body>
+</html>
