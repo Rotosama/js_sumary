@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Resumen de JavaScript</title>
-		<link rel="stylesheet" href="styles.css" />
+		<style></style>
 	</head>
 	<body>
 		<h1>Resumen de JavaScript</h1>
@@ -15,16 +15,12 @@
 			<code>let</code>, o <code>const</code>.
 		</p>
 		<div class="code-container">
+			<div class="code-header">
+				<div class="button red"></div>
+				<div class="button yellow"></div>
+				<div class="button green"></div>
+			</div>
 			<pre id="codigo-variables"></pre>
-		</div>
-
-		<h2>Tipos de Datos</h2>
-		<p>
-			JavaScript tiene varios tipos de datos primitivos y objetos. Aquí
-			hay ejemplos de los tipos de datos más comunes:
-		</p>
-		<div class="code-container">
-			<pre id="codigo-tipos-datos"></pre>
 		</div>
 
 		<h2>Declaración e Inicialización de Variables</h2>
@@ -33,6 +29,11 @@
 			mismo momento.
 		</p>
 		<div class="code-container">
+			<div class="code-header">
+				<div class="button red"></div>
+				<div class="button yellow"></div>
+				<div class="button green"></div>
+			</div>
 			<pre id="codigo-declaracion-inicializacion"></pre>
 		</div>
 
@@ -42,6 +43,11 @@
 			JavaScript, hay scope global y scope local.
 		</p>
 		<div class="code-container">
+			<div class="code-header">
+				<div class="button red"></div>
+				<div class="button yellow"></div>
+				<div class="button green"></div>
+			</div>
 			<pre id="codigo-scope"></pre>
 		</div>
 
@@ -52,6 +58,11 @@
 			<code>do...while</code>:
 		</p>
 		<div class="code-container">
+			<div class="code-header">
+				<div class="button red"></div>
+				<div class="button yellow"></div>
+				<div class="button green"></div>
+			</div>
 			<pre id="codigo-bucles"></pre>
 		</div>
 
@@ -59,10 +70,29 @@
 		<p>
 			Las estructuras condicionales <code>if</code>,
 			<code>if...else</code> y <code>else</code> se utilizan para tomar
-			decisiones o alternativas en el código.
+			decisiones en el código.
 		</p>
 		<div class="code-container">
+			<div class="code-header">
+				<div class="button red"></div>
+				<div class="button yellow"></div>
+				<div class="button green"></div>
+			</div>
 			<pre id="codigo-condicionales"></pre>
+		</div>
+
+		<h2>Funciones</h2>
+		<p>
+			Las funciones en JavaScript se pueden declarar de varias maneras.
+			Aquí hay un ejemplo de una función simple:
+		</p>
+		<div class="code-container">
+			<div class="code-header">
+				<div class="button red"></div>
+				<div class="button yellow"></div>
+				<div class="button green"></div>
+			</div>
+			<pre id="codigo-funciones"></pre>
 		</div>
 
 		<h2>Arrays</h2>
@@ -72,50 +102,27 @@
 			número que ocupa esa posición:
 		</p>
 		<div class="code-container">
+			<div class="code-header">
+				<div class="button red"></div>
+				<div class="button yellow"></div>
+				<div class="button green"></div>
+			</div>
 			<pre id="codigo-arrays"></pre>
 		</div>
 
-		<h2>Funciones</h2>
+		<h2>Tipos de Datos</h2>
 		<p>
-			Las funciones en JavaScript se pueden declarar de varias maneras.
-			Aquí hay un ejemplo de una función simple:
+			JavaScript tiene varios tipos de datos primitivos y objetos. Aquí
+			hay ejemplos de los tipos de datos más comunes:
 		</p>
 		<div class="code-container">
-			<pre id="codigo-funciones"></pre>
+			<div class="code-header">
+				<div class="button red"></div>
+				<div class="button yellow"></div>
+				<div class="button green"></div>
+			</div>
+			<pre id="codigo-tipos-datos"></pre>
 		</div>
-
-		<h2>Ventajas de las Funciones</h2>
-		<p>Las funciones en JavaScript ofrecen varias ventajas:</p>
-		<ul>
-			<li>
-				<strong>Reutilización de Código:</strong> Permiten reutilizar
-				bloques de código en diferentes partes del programa.
-			</li>
-			<li>
-				<strong>Modularidad:</strong> Ayudan a dividir un programa
-				grande en módulos más pequeños y manejables.
-			</li>
-			<li>
-				<strong>Abstracción:</strong> Permiten usar una función sin
-				conocer los detalles internos de su implementación.
-			</li>
-			<li>
-				<strong>Mantenibilidad:</strong> Facilitan la actualización y
-				modificación del código.
-			</li>
-			<li>
-				<strong>Depuración:</strong> Hacen más fácil la identificación y
-				corrección de errores.
-			</li>
-			<li>
-				<strong>Parámetros y Argumentos:</strong> Permiten personalizar
-				el comportamiento de las funciones.
-			</li>
-			<li>
-				<strong>Closures:</strong> Permiten que una función interna
-				acceda a las variables de una función externa.
-			</li>
-		</ul>
 
 		<h2>Métodos Más Usados</h2>
 		<p>
@@ -124,18 +131,23 @@
 			métodos más usados:
 		</p>
 		<div class="code-container">
+			<div class="code-header">
+				<div class="button red"></div>
+				<div class="button yellow"></div>
+				<div class="button green"></div>
+			</div>
 			<pre id="codigo-metodos"></pre>
 		</div>
 
 		<script>
 			const codigoVariables = `
-var nombre = "Heimerdinger";
-let edad = 317;
-const ciudad = "Valencia";
+var nombre = "Juan";
+let edad = 30;
+const ciudad = "Madrid";
 `;
 
 			const codigoDeclaracionInicializacion = `
-var nombre = "Pepito"; // Declaración e inicialización
+var nombre = "Juan"; // Declaración e inicialización
 let edad; // Solo declaración
 edad = 30; // Inicialización posterior
 const ciudad = "Madrid"; // Declaración e inicialización
