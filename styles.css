@@ -2,10 +2,11 @@ body {
 	font-family: Arial, sans-serif;
 	line-height: 1.6;
 	margin: 20px;
+	background-color: #f4f4f4;
 }
 .code-container {
 	background-color: #2d2d2d;
-	color: #f8f8f2;
+	color: #f6f6f6;
 	padding: 0;
 	border-radius: 5px;
 	overflow: hidden;
@@ -41,5 +42,11 @@ body {
 	font-family: "Courier New", Courier, monospace;
 }
 h2 {
-	color: #333;
+	color: #f09000;
+}
+code {
+	background-color: #3c3c3a;
+	padding: 2px 5px;
+	border-radius: 3px;
+	color: #f09000;
 }
